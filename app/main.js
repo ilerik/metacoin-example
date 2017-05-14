@@ -3,7 +3,7 @@ import { default as contract } from 'truffle-contract'
 import MetaCoinContract from '../build/contracts/MetaCoin.json'
 
 const TESTRPC_HOST = 'localhost'
-const TESTRPC_PORT = '8545'
+const TESTRPC_PORT = '8546'
 
 function component () {
   var element = document.createElement('div')

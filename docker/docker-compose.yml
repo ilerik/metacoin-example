@@ -1,10 +1,11 @@
 version: '3'
 services:
   testrpc:
-    image: dougvk/testrpc:latest
-    command: bash -c "testrpc -h 0.0.0.0"
+    build: ../testrpc
+    image: ethereumjs/testrpc:latest
     ports:
-      - "7000:8545"
+     - '8546:8546'
+    command: bash -c "testrpc -p 8546 -i testrpc -h 0.0.0.0"
   truffle3:
     image: dougvk/truffle3:latest
     command: bash
