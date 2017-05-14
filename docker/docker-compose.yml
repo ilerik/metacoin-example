@@ -5,7 +5,7 @@ services:
     image: ethereumjs/testrpc:latest
     ports:
      - '8546:8546'
-    command: bash -c "testrpc -p 8546 -i testrpc -h 0.0.0.0"
+    command: testrpc -p 8546 -i testrpc -h 0.0.0.0
   truffle3:
     image: dougvk/truffle3:latest
     command: bash
